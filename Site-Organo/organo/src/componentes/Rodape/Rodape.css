@@ -1,0 +1,27 @@
+.rodape {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    background: #6278F7;
+    background-image: url(/public/imagens/fundo.png);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    flex-wrap: wrap;
+}
+
+.rodape h4,h5{
+    text-align: center;
+}
+
+.lista__sociais-item {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.lista__sociais-item:last-child {
+    margin-right: 0;
+}
