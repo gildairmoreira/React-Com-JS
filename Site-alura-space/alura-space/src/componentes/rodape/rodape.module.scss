@@ -1,0 +1,30 @@
+@import '../../styles/variaveis';
+
+.rodape{
+    align-items: center;
+    background: $azul-escuro;
+    display: flex;
+    font-family: $fonte-normal;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    &__lista{
+        padding: 0;
+        display: flex;
+        width: 20%;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+    }
+    p{
+        margin-right: 1.3rem;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $azul-claro;
+            text-decoration: underline;
+        }
+    }
+}
