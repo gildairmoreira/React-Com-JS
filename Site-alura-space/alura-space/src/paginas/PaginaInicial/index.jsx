@@ -1,7 +1,9 @@
-import Banner from "../../componentes/banner/banner";
-import Cabecalho from "../../componentes/Cabecalho";
-import Menu from "../../componentes/menu";
-import Rodape from "../../componentes/rodape";
+import Banner from "componentes/banner/banner";
+import Cabecalho from "componentes/Cabecalho";
+import Galeria from "componentes/Galeria";
+import Menu from "componentes/menu";
+import Populares from "componentes/Populares";
+import Rodape from "componentes/rodape";
 import styles from './PaginaInicial.module.scss'
 
 export default function PaginaInicial()
@@ -12,10 +14,16 @@ export default function PaginaInicial()
             <main>
                 <section className={styles.principal}>
                     <Menu />
-                    <Banner/>
+                    <Banner />
                 </section>
+
+                <div className={styles.galeria}>
+                    <Galeria />
+                    <Populares />
+                </div>
             </main>
-            <Rodape/>
+
+            <Rodape />
         </>
     )
 }
