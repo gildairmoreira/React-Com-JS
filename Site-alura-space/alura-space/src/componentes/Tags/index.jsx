@@ -1,15 +1,18 @@
-import React from 'react'
+import React from "react"
 import styles from './Tags.module.scss'
 
-export default function Tags(tags)
+export default function Tags({tags, filtraFotos})
 {
   return (
     <div className={styles.tags}>
-      <p>Busque por tags:</p>
+      <p>Filtre por tags:</p>
       <ul className={styles.tags__lista}>
-        {tags.map((tag) => {
+        {tags.map((tag) =>
+        {
           return (
-            <li key={tag}>{tag}</li>
+            <li key={tag} onClick={filtraFotos(tag)}>
+              {tag}
+            </li>
           )
         })}
       </ul>
