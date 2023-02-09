@@ -56,13 +56,14 @@
             z-index: -1;
             border: 2px solid transparent;
             background: linear-gradient(to right, $rosa, $azul-claro) border-box;
-            -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-                linear-gradient(#fff 0 0);
+            /* -webkit-mask: linear-gradient(#fff 0 0) padding-box ,
+                linear-gradient(#fff 0 0);*/
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             background: linear-gradient(to right, $rosa, $roxo) border-box;
             color: $azul-escuro;
             transition: 0.1s;
         }
+        
     }
 }
