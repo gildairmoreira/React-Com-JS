@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createTheme, StylesProvider, ThemeProvider } from '@material-ui/core';
-import Login from './pages/Login';
+import Router from './routes';
 /* import App from './App'; */
 
 const theme = createTheme({
@@ -21,7 +21,7 @@ root.render(
   <React.StrictMode>
     <StylesProvider injectFirst>
       <ThemeProvider theme={theme}>
-        <Login />
+        <Router />
       </ThemeProvider>
     </StylesProvider>
   </React.StrictMode>
