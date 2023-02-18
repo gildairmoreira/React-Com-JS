@@ -1,11 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import { Container, Titulo, InputContainer } from "./styles";
 import { Input, InputLabel, InputAdornment } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import { UsuarioContex } from "common/context/usuario";
+import { useContext } from "react";
 
-function Login({nome,setNome, saldo, setSaldo}) {
+function Login() {
+  const navigate = useNavigate();
 
-  const history = useHistory()
+  function clickFeira() {
+    navigate("/feira");
+  }
+
+  const { nome, setNome, saldo, setSaldo } = useContext(UsuarioContex);
 
   return (
     <Container>
@@ -30,7 +37,7 @@ function Login({nome,setNome, saldo, setSaldo}) {
         />
       </InputContainer>
 
-      <Button variant="contained" color="primary" onClick={() => history.push('/feira')} >
+      <Button variant="contained" color="primary" onClick={clickFeira}>
         Avançar
       </Button>
     </Container>
