@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createTheme, StylesProvider, ThemeProvider } from '@material-ui/core';
-import Router from './routes';
+import Router from './routes.js';
 /* import App from './App'; */
 
 const theme = createTheme({
