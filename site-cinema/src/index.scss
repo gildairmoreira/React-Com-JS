@@ -1,15 +1,9 @@
-:root{
-  --fonte:'Montserrat', sans-serif;
-  --branco: #ffffff;
-  --preto: #000000;
-  --cinza: #E2E2E2;
-
-}
+@import 'style/variaveis.scss';
 
 body {
   margin: 0;
-  font-family: var(--fonte);
-  background-color: var(--branco);
+  font-family: $fonte;
+  background-color: $branco;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
