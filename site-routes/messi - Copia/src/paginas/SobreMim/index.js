@@ -1,12 +1,12 @@
 import styles from './SobreMim.module.css'
 import PostModelo from "componentes/PostModelo";
-import fotoCapa from "assets/sobre_mim_capa.png"
-import fotoSobreMim from "assets/messi-592cut.png";
+import fotoCapa from "assets/eu-rosto.jpg";
+import fotoSobreMim from "assets/pesoa-programando.png";
 
 export default function SobreMim() {
     return (
       <PostModelo fotoCapa={fotoCapa} titulo="SobreMim">
-        <h3 className={styles.subtitulo}>Sou Lionel Messi</h3>
+        <h3 className={styles.subtitulo}>Olá, eu sou o Gildair!</h3>
         <img
           className={styles.fotoSobreMim}
           src={fotoSobreMim}
@@ -14,35 +14,37 @@ export default function SobreMim() {
         />
 
         <p className={styles.paragrafo}>
-          Lionel Messi é considerado por muitos como um dos maiores jogadores de
-          futebol de todos os tempos. Nascido em Rosário, Argentina, Messi
-          começou a jogar futebol ainda jovem e rapidamente se destacou por suas
-          habilidades incríveis em campo.
+          Minha jornada na programação começou cedo, quando eu costumava
+          modificar jogos Android APK para ter vantagem sobre meus adversários.
+          No entanto, eu não sabia que estava mexendo em códigos, apenas seguia
+          tutoriais e fazia alterações.
         </p>
         <p className={styles.paragrafo}>
-          Messi jogou a maior parte de sua carreira profissional no Barcelona,
-          ​​onde conquistou inúmeros títulos e prêmios individuais, incluindo
-          sete Bolas de Ouro da FIFA. Ele também é o artilheiro de todos os
-          tempos da La Liga, a liga espanhola de futebol, com mais de 400 gols
-          marcados.
+          Foi somente após conhecer o curso de Python do Guanabara no YouTube
+          que decidi aprofundar meus conhecimentos. Eu vi que programação
+          poderia se tornar uma profissão e fiz três módulos do curso. A partir
+          daí, comecei a explorar o mercado e descobri que o front-end era a
+          área que mais combinava comigo, já que eu gostava de criar sites e
+          aplicativos Android.
         </p>
         <p className={styles.paragrafo}>
-          Além de seu sucesso no Barcelona, ​​Messi também teve uma carreira de
-          sucesso na seleção argentina, incluindo a conquista da Copa do Mundo
-          de 2022. Seus dribles incríveis, chutes precisos e habilidades em
-          campo inspiraram uma geração de jogadores de futebol em todo o mundo.
+          Então, comecei a aprender JavaScript, CSS e HTML por meio de cursos
+          gratuitos. Quando terminei de estudar as três linguagens, adquiri o
+          curso da Alura para aprender React, TypeScript e outros frameworks. E
+          após oito meses estudando seis horas por dia, seis dias por semana,
+          tenho certeza de que estou pronto para atuar como desenvolvedor no
+          mercado.
         </p>
         <p className={styles.paragrafo}>
-          Fora de campo, Messi é conhecido por seu trabalho de caridade,
-          incluindo a criação da Fundação Leo Messi para ajudar crianças em todo
-          o mundo. Ele também é um embaixador global da UNICEF e um defensor de
-          causas sociais, incluindo a luta contra a pobreza infantil.
+          Além disso, pretendo fazer faculdade de Ciências da Computação
+          futuramente. Também tenho conhecimentos em marketing, como tráfego
+          pago e SEO. E também Desde jovem, eu já dava manutenção em
+          computadores e, aos poucos, fui descobrindo meu interesse pela área.
         </p>
         <p className={styles.paragrafo}>
-          Lionel Messi continua a ser um dos jogadores mais admirados e
-          respeitados no mundo do futebol. Sua habilidade em campo e seu caráter
-          fora de campo o tornam um modelo a ser seguido por muitos jovens
-          atletas em todo o mundo.
+          A programação se tornou minha paixão e estou animado(a) para
+          compartilhar minhas experiências e conhecimentos com vocês aqui no meu
+          blog. Sejam bem-vindos(as)!
         </p>
       </PostModelo>
     );

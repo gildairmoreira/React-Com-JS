@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import styles from "./Banner.module.css";
 import circuloColorido from "assets/circulo_colorido.png";
-import minhaFoto from "assets/messi-rosto1.png";
+import minhaFoto from "assets/eu-rosto.jpg";
 
 import React from "react";
 
@@ -9,14 +9,15 @@ export default function Banner() {
   return (
     <div className={styles.banner}>
       <div className={styles.apresentacao}>
-        <h1 className={styles.titulo}>Olá, Humanos!</h1>
+        <h1 className={styles.titulo}>Bem-vindo ao meu blog pessoal!</h1>
 
         <p className={styles.paragrafo}>
-          Boas vindas ao meu espaço pessoal! Eu sou um fã incondicional de
-          Lionel Messi, o jogador de futebol argentino. Aqui compartilho meu
-          conhecimento e paixão por esse ídolo do esporte. Espero que você possa
-          aprender algo novo sobre ele e sua incrível carreira. Vamos juntos
-          celebrar a genialidade de Messi!
+          Olá! Meu nome é Gildair, tenho 20 anos
+          e sou um estudante de Front-end com foco em React na Alura. Neste
+          espaço, compartilho minhas experiências, aprendizados e conhecimentos
+          na área de desenvolvimento Front-end. Espero que possa aprender algo
+          novo e trocarmos ideias sobre o mundo do desenvolvimento web. Obrigado
+          por visitar meu blog!
         </p>
       </div>
 
@@ -25,9 +26,9 @@ export default function Banner() {
           src={circuloColorido}
           aria-hidden={true}
           className={styles.circuloColorido}
-        // eslint-disable-next-line react/jsx-no-comment-textnodes
+          // eslint-disable-next-line react/jsx-no-comment-textnodes
         />
-        <img  src={minhaFoto} aria-hidden={true} className={styles.minhaFoto} />
+        <img src={minhaFoto} aria-hidden={true} className={styles.minhaFoto} />
       </div>
     </div>
   );
