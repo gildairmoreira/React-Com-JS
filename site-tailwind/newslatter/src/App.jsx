@@ -1,5 +1,14 @@
+import ArticleList from "./componentes/ArticleList/ArticleList";
+import Header from "./componentes/Header/Header";
+
 const App = () => {
-  return <h1>Hellow Tailwind</h1>;
+  return (
+    <>
+      <Header />
+      <ArticleList />
+    </>
+  );
 };
 
 export default App;
+
